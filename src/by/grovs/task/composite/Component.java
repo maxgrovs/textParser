@@ -1,4 +1,12 @@
 package by.grovs.task.composite;
 
-public class Component {
+public interface Component {
+
+    boolean add(Component component);
+
+    boolean remove(Component component);
+
+    //восстановление текста из композита:
+    String toString();
+
 }
